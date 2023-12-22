@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS pssw generator (wannabe)</title>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>Password generator</h1>
-    <p>Your new password:</p>
+    <div id="generator">
+        <h1>Create Password</h1>
 
+        <form id="frm1" action="/action_page.php">
+            First name: <input type="text" id="name" name="name"><br>
+            Last name: <input type="text" id="surname" name="surname"><br>
+            Favourite color: <input type="text" id="color" name="color"><br><br>
+            <input id="generate-btn" type="button" onclick="showInput()" value="Generate">
+        </form>
+
+        <p>Your new password:</p>
+
+        <p id="result"></p><br><br>
+    </div>
 
     <script type="text/javascript" src="./main.js"></script>
 </body>
